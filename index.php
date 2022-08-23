@@ -25,9 +25,9 @@ if(isset($_GET['insert'])) {
     $insert = $_GET['insert'];
     if(strlen($insert) >= 3){
         $query = $pdo -> prepare("SELECT p.title, c.text 
-                                            FROM post p 
-                                            INNER JOIN comment c ON c.postid = p.id 
-                                            WHERE c.text LIKE ?");
+                                  FROM post p 
+                                  INNER JOIN comment c ON c.postid = p.id 
+                                  WHERE c.text LIKE ?");
         $insert = "%" . $insert . "%";
         $query -> bindParam(1, $insert, PDO::PARAM_STR);
         $query -> execute();
