@@ -1,4 +1,5 @@
-Имеются следующие ресурсы: 
+Имеются следующие ресурсы:
+
 Список записей блога: https://jsonplaceholder.typicode.com/posts 
 Комментарии к записям: https://jsonplaceholder.typicode.com/comments   
 Требуется: 
