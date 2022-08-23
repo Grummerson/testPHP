@@ -22,7 +22,6 @@ foreach ($data as $value)
     $query -> execute();
     $countPost+=1;
 }
-echo "Данные в таблицу post внесены в количестве: $countPost\n";
 
 $dataUrl='https://jsonplaceholder.typicode.com/comments';
 $request=file_get_contents($dataUrl);
@@ -39,4 +38,4 @@ foreach ($data as $value)
     $query -> execute();
     $countComment+=1;
 }
-echo "Данные в таблицу comment внесены в количестве: $countComment";
+echo "Загружено $countPost записей и $countComment комментариев";
